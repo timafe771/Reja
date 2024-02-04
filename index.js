@@ -68,7 +68,7 @@ console.log("Natija", natija3);
 */
 
 //console.log(require("module").wrapper);
-
+/*
 const Account = require("./account");
 Account.tellMeAboutClass();
 Account.tellMeTime();
@@ -77,8 +77,12 @@ console.log("***********");
 
 const myAccount = new Account("Timur", 200000, 351514512246);
 myAccount.giveMeDetails();
-
+*/
 //myAccount.makeDeposit(1000000);
 
 //myAccount.withdrawMoney(400000);
 //myAccount.makeDeposit(200000);
+/*
+const instanceCPUs = require("os").cpus();
+console.log(instanceCPUs.length);
+*/
