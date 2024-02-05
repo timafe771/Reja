@@ -15,12 +15,23 @@ app.set("views", "views");
 app.set("view engine", "ejs");
 
 // 4 Routing kodlari
+/*
 app.get("/hello", function (req, res) {
   res.end(`<h1>HELLO WORLD</h1>`);
 });
 
 app.get("/gift", function (req, res) {
   res.end(`<h1>Siz sovgalar bolimidasiz</h1>`);
+});
+*/
+
+app.post("/create-item", (req, res) => {
+  console.log(req);
+  res.json({ test: "success" });
+});
+
+app.get("/", function (req, res) {
+  res.render("harid");
 });
 
 const server = http.createServer(app);
