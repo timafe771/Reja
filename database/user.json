@@ -1,10 +1,10 @@
 {
   "name": "Steve",
   "profession": "Software Engineer",
-  "age": "20",
+  "age": "30",
   "residence": "S.Korea",
   "adress": "S.Korea Daegu",
-  "language": ["Uzbek", "Korean", "English"],
+  "language": ["Uzbek", "Korean", "English", "Russian"],
   "skills": ["Html", "Css", "Js", "NodeJS", "Python"],
   "extra_skills": [
     "Bootstrap, Materialize",
@@ -14,7 +14,7 @@
   ],
   "work_place": "IT Company",
   "service_desc": "Amet minim mollit non deserunt ullamco est sit alique dolor da amet sint. Velit officia cosique",
-  "about_me": "    Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit error ullam, illo quod odit magnam",
+  "about_me": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit error ullam, illo quod odit magnam",
   "city": "Denau",
   "title": ["Flower", "Seedlings", "Gardner", "Old", "New"],
   "Flower_desc": ["What is a Flower?", "What is aSeedling?", "Who is Gardner?"],

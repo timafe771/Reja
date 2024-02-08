@@ -5,7 +5,7 @@ const http = require("http");
 const fs = require("fs");
 
 let user;
-fs.readFile("database/user.json", "utf-8", (err, data) => {
+fs.readFile("database/user.json", "utf8", (err, data) => {
   if (err) {
     console.log("ERROR:", err);
   } else {
@@ -35,10 +35,10 @@ app.get("/gift", function (req, res) {
 });
 */
 
-app.post("/create-item", (req, res) => {
-  console.log(req);
-  res.json({ test: "success" });
-});
+// app.post("/create-item", (req, res) => {
+//   console.log(req);
+//   res.json({ test: "success" });
+// });
 
 app.get("/author", (req, res) => {
   res.render("author", { user: user });
