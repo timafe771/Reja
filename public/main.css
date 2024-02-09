@@ -188,29 +188,38 @@
   max-width: 971px;
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
 }
 
 .hero {
   display: flex;
   justify-content: space-between;
+  text-align: center;
 }
 
 .midd_contact {
-  width: 500px;
+  width: 499.51px;
+  height: 116.74px;
+  padding-top: 139.15px;
+  margin-left: 392, 07px;
+
+  /* width: 500px;
   padding-top: 130px;
   padding-bottom: 20px;
+  text-align: center; */
 }
 
 .midd_contand {
   margin-bottom: 16px;
   margin-top: 0;
+  text-align: center;
 }
 
 .midd_text {
   width: 100%;
   max-width: 424px;
   margin-top: 0;
-  margin-bottom: 36px;
+  margin-left: 397px;
 }
 
 /* .midd_link {
