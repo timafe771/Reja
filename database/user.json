@@ -3,7 +3,7 @@
   "profession": "Software Engineer",
   "age": "30",
   "residence": "S.Korea",
-  "adress": "S.Korea Daegu",
+  "address": "S.Korea Daegu",
   "language": ["Uzbek", "Korean", "English", "Russian"],
   "skills": ["Html", "Css", "Js", "NodeJS", "Python"],
   "extra_skills": [
