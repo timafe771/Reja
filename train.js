@@ -110,15 +110,24 @@ console.log("passed here 1");*/
 // });
 
 // A task
-function countLetter(letter, loop) {
-  let count = 0;
-  for (let i = 0; i < loop.length; i++) {
-    if (loop[i] === letter) {
-      count++;
-    }
-  }
-  return count;
+// function countLetter(letter, loop) {
+//   let count = 0;
+//   for (let i = 0; i < loop.length; i++) {
+//     if (loop[i] === letter) {
+//       count++;
+//     }
+//   }
+//   return count;
+// }
+
+// let result = countLetter("e", "engineer");
+// console.log(result);
+
+// B Task
+
+function kattaMisol(str) {
+  const misolKatta = str.match(/\d/g);
+  return misolKatta ? misolKatta.length : 0;
 }
 
-let result = countLetter("e", "engineer");
-console.log(result);
+console.log(kattaMisol("ad2a54y79wet0sfgb9"));
