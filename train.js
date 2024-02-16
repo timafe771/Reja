@@ -140,39 +140,39 @@ MASALAN: const shop = new Shop(4, 5, 2); shop.qoldiq() return hozir 20:40da 4ta 
 @MITASK
 */
 
-class Shop {
-  constructor(non, lagmon, cola) {
-    this.non = non;
-    this.lagmon = lagmon;
-    this.cola = cola;
-  }
+// class Shop {
+//   constructor(non, lagmon, cola) {
+//     this.non = non;
+//     this.lagmon = lagmon;
+//     this.cola = cola;
+//   }
 
-  qoldiq() {
-    const now = new Date();
-    const hour = now.getHours();
-    const minute = now.getMinutes();
-    return `hozir ${hour}:${minute}da ${this.nonlar}ta non, ${this.lagmonlar}ta lag'mon va ${this.cola}ta cola mavjud!`;
-  }
+//   qoldiq() {
+//     const now = new Date();
+//     const hour = now.getHours();
+//     const minute = now.getMinutes();
+//     return `hozir ${hour}:${minute}da ${this.nonlar}ta non, ${this.lagmonlar}ta lag'mon va ${this.cola}ta cola mavjud!`;
+//   }
 
-  sotish(mahsulot, miqdor) {
-    this[mahsulot + "lar"] -= miqdor;
-    const now = new Date();
-    const hour = now.getHours();
-    const minute = now.getMinutes();
-    return `hozir ${hour}:${minute}da ${miqdor}ta ${mahsulot} sotildi!`;
-  }
+//   sotish(mahsulot, miqdor) {
+//     this[mahsulot + "lar"] -= miqdor;
+//     const now = new Date();
+//     const hour = now.getHours();
+//     const minute = now.getMinutes();
+//     return `hozir ${hour}:${minute}da ${miqdor}ta ${mahsulot} sotildi!`;
+//   }
 
-  qabul(mahsulot, miqdor) {
-    this[mahsulot + "lar"] += miqdor;
-    const now = new Date();
-    const hour = now.getHours();
-    const minute = now.getMinutes();
-    return `hozir ${hour}:${minute}da ${miqdor}ta ${mahsulot} qabul qilindi!`;
-  }
-}
+//   qabul(mahsulot, miqdor) {
+//     this[mahsulot + "lar"] += miqdor;
+//     const now = new Date();
+//     const hour = now.getHours();
+//     const minute = now.getMinutes();
+//     return `hozir ${hour}:${minute}da ${miqdor}ta ${mahsulot} qabul qilindi!`;
+//   }
+// }
 
-const shop = new Shop(4, 5, 2);
-console.log(shop.qoldiq());
-console.log(shop.sotish("non", 3));
-console.log(shop.qabul("cola", 4));
-console.log(shop.qoldiq());
+// const shop = new Shop(4, 5, 2);
+// console.log(shop.qoldiq());
+// console.log(shop.sotish("non", 3));
+// console.log(shop.qabul("cola", 4));
+// console.log(shop.qoldiq());
