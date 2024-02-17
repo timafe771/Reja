@@ -1,7 +1,5 @@
 // B Task
 
-const { list } = require("mongodb/lib/gridfs/grid_store");
-
 // function kattaMisol(str) {
 //   const misolKatta = str.match(/\d/g);
 //   return misolKatta ? misolKatta.length : 0;
@@ -59,7 +57,18 @@ MASALAN: const shop = new Shop(4, 5, 2); shop.qoldiq() return hozir 20:40da 4ta 
 Shunday function tuzing, u 2ta string parametr ega bolsin, hamda agar har ikkala string bir hil harflardan iborat bolsa true aks holda false qaytarsin
 MASALAN checkContent("mitgroup", "gmtiprou") return qiladi true*/
 
-const list = ["kmitgroup", "gmtiprou"];
+// const list = ["kmitgroup", "gmtiprou"];
 
-const rusult = list.includes("kmitgroup", "gmtiprou");
-console.log("result:", rusult);
+// const rusult = list.includes("kmitgroup", "gmtiprou");
+// console.log("result:", rusult);
+
+//*D-TASK:
+function soliution(harf, harf2) {
+  const a = harf.split("").sort().join("");
+  const b = harf2.split("").sort().join("");
+
+  return a == b;
+}
+
+const natija = soliution("mitgroup", "gmtiprou");
+console.log(natija);
