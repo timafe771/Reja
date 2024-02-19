@@ -63,12 +63,25 @@ MASALAN checkContent("mitgroup", "gmtiprou") return qiladi true*/
 // console.log("result:", rusult);
 
 //*D-TASK:
-function soliution(harf, harf2) {
-  const a = harf.split("").sort().join("");
-  const b = harf2.split("").sort().join("");
+// function soliution(harf, harf2) {
+//   const a = harf.split("").sort().join("");
+//   const b = harf2.split("").sort().join("");
 
-  return a == b;
+//   return a == b;
+// }
+
+// const natija = soliution("mitgroup", "gmtiprou");
+// console.log(natija);
+
+/*E-TASK: 
+
+Shunday function tuzing, u bitta string argumentni qabul qilib osha stringni teskari qilib return qilsin.
+MASALAN: getReverse("hello") return qilsin "olleh" */
+
+function getReverse(str) {
+  if (str === "") return "";
+  else return getReverse(str.substr(1)) + str.charAt(0);
 }
-
-const natija = soliution("mitgroup", "gmtiprou");
-console.log(natija);
+let str = "hello";
+const input = getReverse(str);
+console.log(input);
