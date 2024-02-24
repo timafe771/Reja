@@ -1,17 +1,14 @@
-/*F-TASK: 
-
-Shunday findDoublers function tuzing, unga faqat bitta string argument pass bolib, agar stringda bir hil harf qatnashgan bolsa true, qatnashmasa false qaytarishi kerak.
-MASALAN: getReverse("hello") return true return qiladi
-*/
-function findDoublers(inputString) {
-  const seen = {};
-  inputString = inputString.toLowerCase();
-  for (let char of inputString) {
-    if (seen[char]) {
-      return true;
+function getHighestIndex(array) {
+  let max = array[0];
+  let maxIndex = 0;
+  for (let i = 1; i < array.length; i++) {
+    if (array[i] > max) {
+      max = array[i];
+      maxIndex = i;
     }
-    seen[char] = true;
   }
-  return false;
+  return maxIndex;
 }
-console.log(findDoublers("hello"));
+
+let array = [5, 21, 12, 21, 8];
+console.log(getHighestIndex(array));
